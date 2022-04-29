@@ -1,0 +1,53 @@
+.container {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+.input-box {
+    border: 1px solid black;
+    position: relative;
+}
+
+.input-box>input {
+    border: 0;
+    padding: 10px 30px 10px 10px;
+    width: calc(100% 40px);
+}
+
+.input-box>input:focus-visible {
+    outline: none;
+}
+
+.cross-icon {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 15px;
+    cursor: pointer;
+}
+
+button {
+    margin-top: 20px;
+}
+
+.todo-list {
+    padding: 0;
+    list-style: none;
+}
+
+.todo-list li {
+    margin-bottom: 20px;
+}
+
+.todo-list input {
+    width: calc(100% -20px)
+}
+
+.todo-list .cross-icon {
+    right: -20px;
+}

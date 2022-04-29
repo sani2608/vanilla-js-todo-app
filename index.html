@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./Todo.js" defer></script>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Todo App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="input-box">
+            <input id="getTodoInput" type="text" class="" placeholder="enter todo" />
+            <span class="cross-icon" onclick="emptyInputField()">
+                X
+            </span>
+        </div>
+        <button onclick="addTodo()" type="button">Add Todo</button>
+        <div class="todo-container">
+            <ul ondblclick="makeInputEditable(event)" onclick="handleClick(event)" class="todo-list"
+                id="todoListContainer">
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
